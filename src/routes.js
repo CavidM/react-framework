@@ -9,15 +9,16 @@ import TodoView from './views/todos/todoView';
 import MainLayout from './layouts/mainLayout';
 
 export default function Routes(props) {
+
     return (
         <Router>
             <div>
-                <Switch layout="test">
-                    <Route path="/todos" {...props}>
-                        <MainLayout>
+                <Switch>
+                    <MainLayout>
+                        <Route path="/todos">
                             <TodoView />
-                        </MainLayout>
-                    </Route>
+                        </Route>
+                    </MainLayout>
                 </Switch>
             </div>
         </Router>

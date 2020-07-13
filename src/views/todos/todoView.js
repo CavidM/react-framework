@@ -1,9 +1,13 @@
 import React from 'react';
-import TodoHtml from './todoHtml';
+import TodoFilterComponent from './todo-filter/todoFilterComponent';
+import TodoListComponent from './todo-list/todoListComponent';
 
 export default function TodoView(props) {
 
     return (
-        <TodoHtml />
+        <div className="todo-view">
+            <TodoFilterComponent />
+            <TodoListComponent />
+        </div>
     );
 }

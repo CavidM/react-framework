@@ -1,8 +1,8 @@
-import {todos } from '../http/todoServices';
+import http from '../tools/http';
 
-export const getTodos = async() => {
+export async function todos() {
 
-    let x = await todos();
-    
-    return x;
+    let res = await http.get('https://jsonplaceholder.typicode.com/posts');
+
+    return res;
 }

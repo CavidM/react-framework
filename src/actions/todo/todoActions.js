@@ -1,8 +1,8 @@
-import { getTodos as s } from '../../services/todoServices';
+import { todos } from '../../services/todoServices';
 
-export const getTodos = async () => {
+export const loadTodos = async () => {
 
-    let res = await s();
+    let res = await todos();
 
     return res
 }
