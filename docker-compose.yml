@@ -12,3 +12,4 @@ services:
             - type: bind
               source: .
               target: /todo
+        stdin_open: true
